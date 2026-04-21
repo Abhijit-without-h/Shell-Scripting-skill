@@ -45,6 +45,34 @@ The skill is automatically used when:
 - Clean up with traps even when interrupted
 - Pass ShellCheck without warnings
 
+## Installation
+
+### Via npm (Recommended)
+
+```bash
+# Install directly from GitHub
+npx github:Abhijit-without-h/Shell-Scripting-skill
+
+# Or clone manually
+git clone https://github.com/Abhijit-without-h/Shell-Scripting-skill.git ~/.claude/skills/shell-scripting
+```
+
+### Via Claude Code Plugin System
+
+```bash
+# Using Claude Code CLI
+claude plugin install Abhijit-without-h/Shell-Scripting-skill
+```
+
+### Validation
+
+After installation, validate the skill structure:
+
+```bash
+cd ~/.claude/skills/shell-scripting
+npm run validate
+```
+
 ## Usage Examples
 
 ### Quick Safety Header
