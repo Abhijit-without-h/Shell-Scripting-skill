@@ -47,14 +47,22 @@ The skill is automatically used when:
 
 ## Installation
 
-### Via npm (Recommended)
+### Via Skills CLI (Recommended)
+
+The easiest way to install using the [open agent skills ecosystem](https://skills.sh/):
 
 ```bash
-# Install directly from GitHub
-npx github:Abhijit-without-h/Shell-Scripting-skill
+# Install to Claude Code
+npx skills add Abhijit-without-h/Shell-Scripting-skill
 
-# Or clone manually
-git clone https://github.com/Abhijit-without-h/Shell-Scripting-skill.git ~/.claude/skills/shell-scripting
+# Install to specific agents
+npx skills add Abhijit-without-h/Shell-Scripting-skill -a claude-code
+
+# List what would be installed first
+npx skills add Abhijit-without-h/Shell-Scripting-skill --list
+
+# Non-interactive installation
+npx skills add Abhijit-without-h/Shell-Scripting-skill -y
 ```
 
 ### Via Claude Code Plugin System
@@ -62,6 +70,14 @@ git clone https://github.com/Abhijit-without-h/Shell-Scripting-skill.git ~/.clau
 ```bash
 # Using Claude Code CLI
 claude plugin install Abhijit-without-h/Shell-Scripting-skill
+```
+
+### Manual Installation
+
+```bash
+# Clone directly to skills directory
+git clone https://github.com/Abhijit-without-h/Shell-Scripting-skill.git \
+  ~/.claude/skills/shell-scripting
 ```
 
 ### Validation
